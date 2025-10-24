@@ -8,14 +8,11 @@ This repository contains a **reproducible Jupyter notebook** (`$SPY Monte Carlo 
   1) **Percentile paths** (p5/p25/median/p75/p95) plus mean, and  
   2) **Histogram of simulated one‑year returns** with percentile markers.
 
-> These outputs summarize **scenarios**, not point forecasts.
-
 ---
 
 ## Open the notebook in Colab
-Once this repo is published on GitHub, use these links (replace placeholders with your path):
-- **Colab:** `https://colab.research.google.com/github/<YOUR_GITHUB_USERNAME>/<YOUR_REPO_NAME>/blob/main/$SPY Monte Carlo Price Simulation.ipynb`
-- **nbviewer:** `https://nbviewer.org/github/<YOUR_GITHUB_USERNAME>/<YOUR_REPO_NAME>/blob/main/$SPY Monte Carlo Price Simulation.ipynb`
+- **Colab:** `https://colab.research.google.com/github/derekbalaian/-SPY-Monte-Carlo-Simulation/blob/main/$SPY Monte Carlo Price Simulation.ipynb`
+- **nbviewer:** `https://nbviewer.org/github/derekbalaian/-SPY-Monte-Carlo-Simulation/blob/main/$SPY Monte Carlo Price Simulation.ipynb`
 
 ---
 
@@ -54,7 +51,7 @@ jupyter notebook "$SPY Monte Carlo Price Simulation.ipynb"
 ├── requirements.txt
 ├── LICENSE
 ├── .gitignore
-└── figures/                # optional: save charts here if you export them
+└── figures/                
 ```
 
 ## License
