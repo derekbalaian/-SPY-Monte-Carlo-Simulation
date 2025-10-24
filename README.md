@@ -12,7 +12,6 @@ This repository contains a **reproducible Jupyter notebook** (`$SPY Monte Carlo 
 
 ## Open the notebook in Colab
 - **Colab:** `https://colab.research.google.com/github/derekbalaian/-SPY-Monte-Carlo-Simulation/blob/main/%24SPY%20Monte%20Carlo%20Price%20Simulation.ipynb`
-- **nbviewer:** `https://nbviewer.org/github/derekbalaian/-SPY-Monte-Carlo-Simulation/blob/main/%24SPY%20Monte%20Carlo%20Price%20Simulation.ipynb`
 
 ---
 
