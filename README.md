@@ -42,16 +42,5 @@ jupyter notebook "$SPY Monte Carlo Price Simulation.ipynb-3"
 
 ---
 
-## Repo layout (suggested)
-```
-.
-├── $SPY Monte Carlo Price Simulation.ipynb
-├── README.md
-├── requirements.txt
-├── LICENSE
-├── .gitignore
-└── figures/                
-```
-
 ## License
 MIT © 2025 Derek Balaian
