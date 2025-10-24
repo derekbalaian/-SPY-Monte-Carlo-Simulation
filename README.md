@@ -22,7 +22,7 @@ python -m venv .venv && source .venv/bin/activate  # macOS/Linux
 # .venv\Scripts\activate                         # Windows PowerShell
 
 pip install -r requirements.txt
-jupyter notebook "$SPY Monte Carlo Price Simulation.ipynb"
+jupyter notebook "$SPY Monte Carlo Price Simulation.ipynb-3"
 ```
 
 ### Method (high‑level)
