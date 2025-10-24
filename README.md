@@ -1,0 +1,61 @@
+# SPY Monte Carlo — 1‑Year Percentile Paths & Return Distribution
+
+This repository contains a **reproducible Jupyter notebook** (`$SPY Monte Carlo Price Simulation.ipynb`) that:
+- pulls the last **5 years** of **SPY** daily prices via **yfinance**,
+- computes daily log returns and annualizes **drift (μ)** and **volatility (σ)**,
+- simulates **1 year (252 trading days)** of prices under **Geometric Brownian Motion (GBM)** with **~1,000 paths**, 
+- and produces two key visuals:
+  1) **Percentile paths** (p5/p25/median/p75/p95) plus mean, and  
+  2) **Histogram of simulated one‑year returns** with percentile markers.
+
+> These outputs summarize **scenarios**, not point forecasts.
+
+---
+
+## Open the notebook in Colab
+Once this repo is published on GitHub, use these links (replace placeholders with your path):
+- **Colab:** `https://colab.research.google.com/github/<YOUR_GITHUB_USERNAME>/<YOUR_REPO_NAME>/blob/main/$SPY Monte Carlo Price Simulation.ipynb`
+- **nbviewer:** `https://nbviewer.org/github/<YOUR_GITHUB_USERNAME>/<YOUR_REPO_NAME>/blob/main/$SPY Monte Carlo Price Simulation.ipynb`
+
+---
+
+## Quickstart (local)
+
+```bash
+python -m venv .venv && source .venv/bin/activate  # macOS/Linux
+# .venv\Scripts\activate                         # Windows PowerShell
+
+pip install -r requirements.txt
+jupyter notebook "$SPY Monte Carlo Price Simulation.ipynb"
+```
+
+### Method (high‑level)
+- **Data:** 5y daily adjusted close from yfinance (`auto_adjust=True`).
+- **Estimation:** daily log returns ⇒ annualized μ, σ (×252).
+- **Model:** GBM  
+  \( S_{t+\Delta} = S_t \cdot \exp\left[(\mu - 0.5\sigma^2)\Delta + \sigma\sqrt{\Delta}\,\varepsilon_t\right],\; \varepsilon_t \sim \mathcal N(0,1) \).
+- **Simulation:** default **N = 1000** paths, **T = 252** steps (1y).
+
+### Outputs
+- **Percentile lines:** p5 / p25 / p50 / p75 / p95 (+ mean).  
+- **One‑year return distribution:** histogram + percentile reference lines.
+
+### Reproducibility notes
+- Set a fixed random seed for consistent runs if needed (e.g., `np.random.seed(42)`).
+- Package versions are pinned in `requirements.txt` for consistent environments.
+
+---
+
+## Repo layout (suggested)
+```
+.
+├── $SPY Monte Carlo Price Simulation.ipynb
+├── README.md
+├── requirements.txt
+├── LICENSE
+├── .gitignore
+└── figures/                # optional: save charts here if you export them
+```
+
+## License
+MIT © 2025 Derek Balaian
